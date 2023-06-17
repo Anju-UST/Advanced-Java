@@ -1,0 +1,3 @@
+server.port=9092
+spring.application.name=book-service
+eureka.client.service-url.default-zone=http://localhost:9091/eureka

@@ -1,0 +1,5 @@
+package com.ust.book.Repo;
+
+public interface BookRepo {
+
+}

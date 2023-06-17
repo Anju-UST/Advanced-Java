@@ -1,0 +1,32 @@
+package com.rabbitmq.demo.config;
+
+import javax.naming.Binding;
+
+import org.springframework.amqp.core.BindingBuilder;
+import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.core.TopicExchange;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class Config {
+	public static final String Queue="ust_queue";
+	public static final String Exchange="ust_exchange";
+	public static final String Routingkey="ust_key";
+	
+	@Bean
+	public Queue queue() {
+		return new Queue(Queue);
+	}
+	
+	@Bean
+	public TopicExchange exchange() {
+		return new TopicExchange(Exchange);
+	}
+	
+	@Bean
+	public Binding binding(Queue queue,TopicExchange exchange) {
+		return BindingBuilder.bind(queue).to(exchange).with(Routingkey);
+		
+	}
+}

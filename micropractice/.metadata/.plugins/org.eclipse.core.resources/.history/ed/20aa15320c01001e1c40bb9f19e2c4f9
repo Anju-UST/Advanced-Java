@@ -1,0 +1,5 @@
+package com.ust.consumer.interfaces;
+
+public interface StudentIface {
+
+}

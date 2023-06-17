@@ -1,0 +1,15 @@
+package com.ust.consumer.Ctrlr;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ust.consumer.interfaces.StudentIface;
+
+@RestController
+@RequestMapping("consumer")
+public class StudentCtrlr {
+	@Autowired
+	StudentIface stud;
+
+}

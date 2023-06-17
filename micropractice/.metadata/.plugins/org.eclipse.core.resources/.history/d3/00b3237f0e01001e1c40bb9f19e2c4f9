@@ -1,0 +1,11 @@
+package com.ust.consumer.interfaces;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@FeignClient(name="book-service")
+public interface StudentIface {
+	
+	@RequestMapping(method=RequestMethod.GET, value="/products")
+	public List<Product> getProducts();
+}

@@ -1,0 +1,13 @@
+package com.ust.consumer;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class FeignStudentApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FeignStudentApplication.class, args);
+	}
+
+}

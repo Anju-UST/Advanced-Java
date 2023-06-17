@@ -1,0 +1,5 @@
+package com.rabbitmq.demo.config;
+
+public class Config {
+
+}

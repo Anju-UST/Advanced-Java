@@ -1,0 +1,5 @@
+package com.ust.client.ctrlr;
+
+public class HelloClient {
+
+}
